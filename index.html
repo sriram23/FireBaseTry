@@ -6,6 +6,12 @@
 <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 <script>
 var ref = new Firebase('https://hellowrld.firebaseio.com/');
+firebase.auth().signInWithCustomToken(token).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
 
 </script>
 <table><tr><td>MailId:</td><td><input type="text" name="name"></td></tr>
