@@ -5,8 +5,8 @@
 <body>
 <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 <script>
-var ref = new Firebase('https://hellowrld.firebaseio.com/');
 function myFunc(){
+var ref = new Firebase('https://hellowrld.firebaseio.com/');
 firebase.auth().signInWithCustomToken(token).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
